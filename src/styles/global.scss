@@ -1,0 +1,134 @@
+/* Estilo general del contenedor principal */
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffe4e4; /* Fondo rosa claro */
+    color: #6d1f3c; /* Color del texto rosa oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif moderna */
+    padding: 20px;
+    border: 1px solid #f9c6c9; /* Borde rosa pálido */
+    border-radius: 12px; /* Bordes más redondeados */
+}
+
+/* Estilo del formulario */
+form {
+    background: #fff; /* Fondo blanco para destacar el formulario */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del título principal */
+h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: #99234b; /* Rosa brillante */
+    text-align: center;
+}
+
+/* Estilo para la de y área de texto */
+input[type="text"],
+textarea {
+    width: calc(100% - 3px);
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #f48fb1; /* Borde rosa suave */
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #ec407a; /* Rosa brillante al enfocar */
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #ec407a; /* Rosa brillante */
+    color: #fff;
+    border: 2px solid #ec407a !important;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"] {
+    background-color: #ec407a; /* Rosa brillante */
+    color: #fff;
+}
+
+button:hover {
+    background-color: #d81b60; /* Rosa más oscuro al pasar el ratón */
+    border-color: #d81b60;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #c2185b; /* Rosa aún más oscuro al hacer clic */
+    transform: translateY(0);
+}
+
+/* Estilo de la lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo de los elementos de la lista */
+li {
+    background: #f7b2c9; /* Rosa pálido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+li:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+nav li {
+    margin: 25px !important;
+}
+
+/* Estilo para la descripción */
+#description {
+    list-style-type: none;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #f48fb1; /* Borde rosa suave */
+    border-radius: 8px;
+    background-color: #fff; /* Fondo blanco para el área de descripción */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título en la descripción */
+#description h2 {
+    font-size: 22px;
+    color: #ec407a; /* Rosa brillante */
+}
+
+/* Estilo del texto dentro de los elementos de la lista */
+li p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #6d1f3c; /* Texto en rosa oscuro */
+}
